@@ -1,6 +1,5 @@
 :root {
-  /* Colors
-  ____________________*/
+  /* Colors */
   --color-primary: #25ab75;
   --color-primary-dark: #208c61;
   --color-bg-primary: #DCDCDC;
@@ -10,8 +9,7 @@
   --color-text: #676767;
   --color-border: #373737;
 
-  /* Font & Typography
-  ___________________*/
+  /* Font & Typography */
   --ff-body: "Space Grotesk", sans-serif;
   /* font sizes */
   --fs-sm: 1.4rem;
@@ -26,24 +24,21 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* z-index
-  ___________________*/
+  /* z-index */
   --zindex-menu: 1000;
   --zindex-fixed: 1010;
 
-  /* With & Height 
-  ------------------*/
+  /* Width & Height */
   --width-container: 98rem;
   --height-header: 10rem;
   --height-header--scroll: 8rem;
 
-  /* Transition and box shadow*/
+  /* Transition and box shadow */
   --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS Reset
---------------------------------------------------------------*/
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -101,8 +96,7 @@ body {
   line-height: 1.2;
 }
 
-/* Reusable CSS
---------------------------------------------------------------*/
+/* Reusable CSS */
 .container {
   width: 90%;
   max-width: var(--width-container);
@@ -172,8 +166,7 @@ body {
   color: var(--color-white);
 }
 
-/* Header
---------------------------------------------------------------*/
+/* Header */
 .header {
   background-color: var(--color-bg-primary);
   position: fixed;
@@ -272,8 +265,7 @@ body {
   }
 }
 
-/* Hero
---------------------------------------------------------------*/
+/* Hero */
 .hero__wrapper {
   min-height: calc(100vh - var(--height-header));
   padding: 5rem 0;
@@ -302,6 +294,7 @@ body {
 
 .hero__description {
   margin-bottom: 5rem;
+  text-align: justify;
 }
 
 .hero__info {
@@ -319,9 +312,11 @@ body {
   color: var(--color-white);
   margin-bottom: 1rem;
 }
+
 .Pratik_dev {
   color: var(--color-white);
 }
+
 .hero__info-title {
   font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
@@ -335,8 +330,7 @@ body {
   }
 }
 
-/* About
---------------------------------------------------------------*/
+/* About */
 .about__content {
   max-width: 50rem;
   margin: auto;
@@ -351,6 +345,7 @@ body {
 
 .about__description {
   margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .skills {
@@ -388,8 +383,7 @@ body {
   color: var(--color-primary);
 }
 
-/* Qualification
---------------------------------------------------------------*/
+/* Qualification */
 .qualification__wrapper {
   margin-bottom: 5rem;
 }
@@ -436,8 +430,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Services
---------------------------------------------------------------*/
+/* Services */
 .service__card {
   background-color: var(--color-bg-secondary);
   box-shadow: var(--box-shadow);
@@ -467,8 +460,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Projects
---------------------------------------------------------------*/
+/* Projects */
 .project__content {
   width: 100%;
   max-width: 30rem;
@@ -504,8 +496,7 @@ body {
   column-gap: 1rem;
 }
 
-/* Testimonials
---------------------------------------------------------------*/
+/* Testimonials */
 .testimonial__card {
   background-color: var(--color-bg-secondary);
   box-shadow: var(--box-shadow);
@@ -558,8 +549,7 @@ body {
   background-color: var(--color-primary);
 }
 
-/* Contact
---------------------------------------------------------------*/
+/* Contact */
 .contact__wrapper {
   border-top: 1px solid var(--color-border);
   padding-top: 3rem;
@@ -580,8 +570,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Footer
---------------------------------------------------------------*/
+/* Footer */
 .footer {
   background-color: var(--color-bg-footer);
   padding: 5rem 0;
@@ -629,8 +618,7 @@ body {
   padding-top: 3rem;
 }
 
-/* Scrollbar
---------------------------------------------------------------*/
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 1rem;
   border-radius: 0.5rem;
@@ -646,10 +634,9 @@ body {
   background-color: var(--color-primary);
 }
 
-/* Breakpoints
---------------------------------------------------------------*/
+/* Responsive Adjustments */
 
-/* Medium devices*/
+/* Medium devices */
 @media screen and (min-width: 560px) {
   .service__wrapper {
     grid-template-columns: repeat(2, 250px);
@@ -706,7 +693,6 @@ body {
 }
 
 /* Large devices */
-
 @media screen and (min-width: 968px) {
   .about__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -740,5 +726,44 @@ body {
 
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small devices (Mobile) */
+@media screen and (max-width: 768px) {
+  .about__wrapper {
+    grid-template-columns: 1fr; /* Stack the columns vertically on mobile */
+    text-align: center; /* Center-align text on mobile */
+  }
+
+  .about__content {
+    padding: 2rem; /* Add padding for better spacing on mobile */
+  }
+
+  .about__title {
+    font-size: var(--fs-xl); /* Adjust font size for smaller screens */
+    margin-bottom: 2rem; /* Adjust margin for spacing */
+  }
+
+  .about__description {
+    font-size: var(--fs-md); /* Adjust font size for readability */
+    margin-bottom: 2rem; /* Adjust margin for spacing */
+  }
+
+  .skills__wrapper {
+    flex-direction: column; /* Stack skills vertically on mobile */
+    gap: 2rem; /* Space out the skills sections */
+  }
+
+  .skills__content {
+    padding: 2rem; /* Add padding for better spacing */
+  }
+
+  .skills__title {
+    font-size: var(--fs-lg); /* Adjust font size for readability */
+  }
+
+  .skills__subtitle {
+    font-size: var(--fs-md); /* Adjust subtitle font size */
   }
 }
