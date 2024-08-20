@@ -412,6 +412,7 @@ body {
 
 .qualification__description {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .qualification__date {
@@ -482,6 +483,7 @@ body {
 
 .project__description {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .project__link {
