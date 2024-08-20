@@ -312,7 +312,10 @@ body {
   color: var(--color-white);
   margin-bottom: 1rem;
 }
-
+.projects{
+  height: 200px;
+  width: 499px;
+}
 .Pratik_dev {
   color: var(--color-white);
 }
