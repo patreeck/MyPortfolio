@@ -693,7 +693,11 @@ body {
   }
 
   .hero__img {
-    justify-self: flex-end;
+    width: 370px;
+    height: 370px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    justify-self: center; 
   }
 }
 
